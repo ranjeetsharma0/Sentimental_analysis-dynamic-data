@@ -1,7 +1,7 @@
 const express = require('express');
 const run = require('./JJ');
 const app = express();
-const port = 8000;
+const port =  process.env.PORT ||8000;
 app.use(express.text())
 const serveSTAT = (req, res) => {
     res.send("Hello")
